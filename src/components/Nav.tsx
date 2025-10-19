@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
 
           <div className="flex items-center gap-4">
             <a
-              href="\src\assets\images\cv.pdf"
+              href="\cv.pdf"
               download="Hamza-Elbouanani-CV.pdf"
               className="hidden px-5 py-2 text-sm font-semibold transition-all duration-300 border rounded-full text-lime-400 border-lime-400/50 md:inline-block hover:bg-lime-400/10 hover:border-lime-400"
             >
@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
                 </a>
               ))}
               <a
-                  href="\src\assets\images\cv.pdf"
+                  href="\cv.pdf"
               download="Hamza-Elbouanani-CV.pdf"
                 className="block w-full px-4 py-3 mt-4 text-center text-lime-400 transition-colors border rounded-full border-lime-400/50 hover:bg-lime-400/10"
               >
