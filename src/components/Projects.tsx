@@ -5,8 +5,8 @@ import { Github, ExternalLink, ChevronLeft, ChevronRight, HeartPulse, CheckCircl
 // --- Image Imports ---
 import qlWeb1 from '../assets/images/qreeblikmedicalscreenshot1.png';
 import qlWeb2 from '../assets/images/qreeblikmedicalscreenshot2.png';
-import qlWeb3 from '../assets/images/qreeblikmedicalscreenshot3.png';
-import qlWeb4 from '../assets/images/qreeblikmedicalscreenshot4.png';
+import qlWeb3 from '../assets/images/qreeblikmedicalScreenshot3.png';
+import qlWeb4 from '../assets/images/qreeblikmedicalScreenshot4.png';
 import qlWeb6 from '../assets/images/qreeblikmedicalscreenshot6.png';
 import qlWeb7 from '../assets/images/qreeblikmedicalscreenshot7.png';
 
