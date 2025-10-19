@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-// 👇 ÉTAPE 1 : IMPORTE TON FICHIER PDF ICI
-// Assure-toi que le chemin est correct par rapport à l'emplacement de ton fichier Navbar.tsx
-import cvPDF from "../../assets/images/cv.png";
-
 const navItems = [
   { name: "Home", link: "#home" },
   { name: "Projects", link: "#projects" },
@@ -77,10 +73,9 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            {/* 👇 ÉTAPE 2 : MODIFIE LE LIEN POUR LE DESKTOP */}
             <a
-              href={cvPDF}
-              download="Hamza-Elbouanani-CV.pdf" // Ceci définit le nom du fichier téléchargé
+              href="\src\assets\images\cv.pdf"
+              download="Hamza-Elbouanani-CV.pdf"
               className="hidden px-5 py-2 text-sm font-semibold transition-all duration-300 border rounded-full text-lime-400 border-lime-400/50 md:inline-block hover:bg-lime-400/10 hover:border-lime-400"
             >
               Download CV
@@ -123,10 +118,9 @@ const Navbar: React.FC = () => {
                   {name}
                 </a>
               ))}
-              {/* 👇 ÉTAPE 3 : MODIFIE LE LIEN POUR LE MOBILE */}
               <a
-                href={cvPDF}
-                download="Hamza-Elbouanani-CV.pdf"
+                  href="\src\assets\images\cv.pdf"
+              download="Hamza-Elbouanani-CV.pdf"
                 className="block w-full px-4 py-3 mt-4 text-center text-lime-400 transition-colors border rounded-full border-lime-400/50 hover:bg-lime-400/10"
               >
                 Download CV
