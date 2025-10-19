@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 
 // 👇 ÉTAPE 1 : IMPORTE TON FICHIER PDF ICI
 // Assure-toi que le chemin est correct par rapport à l'emplacement de ton fichier Navbar.tsx
-import cvPDF from "../../assets/images/Hamza-Elbouanani-CV.pdf";
+import cvPDF from "../../assets/images/cv.png";
 
 const navItems = [
   { name: "Home", link: "#home" },
