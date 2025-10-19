@@ -6,7 +6,6 @@ import { Github, ExternalLink, ChevronLeft, ChevronRight, HeartPulse, CheckCircl
 import qlWeb1 from '../assets/images/qreeblikmedicalscreenshot1.png';
 import qlWeb2 from '../assets/images/qreeblikmedicalscreenshot2.png';
 import qlWeb3 from '../assets/images/qreeblikmedicalscreenshot3.png';
-import qlWeb4 from '../assets/images/qreeblikmedicalscreenshot4.png';
 import qlWeb6 from '../assets/images/qreeblikmedicalscreenshot6.png';
 import qlWeb7 from '../assets/images/qreeblikmedicalscreenshot7.png';
 
@@ -29,7 +28,7 @@ import f2r5 from '../assets/images/f2r5.png';
 const projects = [
   {
     title: "Qreeb Lik Web Platform",
-    images: [qlWeb1, qlWeb2, qlWeb3, qlWeb4, qlWeb6, qlWeb7],
+    images: [qlWeb1, qlWeb2, qlWeb3, qlWeb6, qlWeb7],
     description: "A comprehensive medical platform designed to connect doctors and patients in Morocco, featuring secure data handling and real-time communication. Built for robust performance and scalability.",
     features: [
         { icon: <HeartPulse />, text: "Patient & Doctor Dashboards" },
