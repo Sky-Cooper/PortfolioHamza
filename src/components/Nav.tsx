@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
+// 👇 ÉTAPE 1 : IMPORTE TON FICHIER PDF ICI
+// Assure-toi que le chemin est correct par rapport à l'emplacement de ton fichier Navbar.tsx
+import cvPDF from "../../assets/images/Hamza-Elbouanani-CV.pdf";
+
 const navItems = [
   { name: "Home", link: "#home" },
   { name: "Projects", link: "#projects" },
@@ -40,12 +44,9 @@ const Navbar: React.FC = () => {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      {/* Animated top border line */}
       <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-lime-400 to-transparent animate-pulse opacity-50"></div>
-
       <nav className="relative px-6 mx-auto max-w-7xl sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
             <h1 className="text-2xl font-extrabold text-white select-none">
               <span className="text-lime-400 transition-colors group-hover:text-lime-300">
@@ -55,7 +56,6 @@ const Navbar: React.FC = () => {
             </h1>
           </a>
 
-          {/* Desktop Navigation */}
           <div className="items-center hidden gap-8 md:flex">
             {navItems.map(({ name, link }) => (
               <a
@@ -77,15 +77,15 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            {/* 👇 ÉTAPE 2 : MODIFIE LE LIEN POUR LE DESKTOP */}
             <a
-              href="/hamza-elbouanani-cv.pdf"
-              download
+              href={cvPDF}
+              download="Hamza-Elbouanani-CV.pdf" // Ceci définit le nom du fichier téléchargé
               className="hidden px-5 py-2 text-sm font-semibold transition-all duration-300 border rounded-full text-lime-400 border-lime-400/50 md:inline-block hover:bg-lime-400/10 hover:border-lime-400"
             >
               Download CV
             </a>
 
-            {/* Mobile Menu Button */}
             <button
               className="z-50 p-2 text-lime-400 rounded-md md:hidden focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
@@ -98,7 +98,6 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -124,9 +123,10 @@ const Navbar: React.FC = () => {
                   {name}
                 </a>
               ))}
+              {/* 👇 ÉTAPE 3 : MODIFIE LE LIEN POUR LE MOBILE */}
               <a
-                href="/hamza-elbouanani-cv.pdf"
-                download
+                href={cvPDF}
+                download="Hamza-Elbouanani-CV.pdf"
                 className="block w-full px-4 py-3 mt-4 text-center text-lime-400 transition-colors border rounded-full border-lime-400/50 hover:bg-lime-400/10"
               >
                 Download CV
